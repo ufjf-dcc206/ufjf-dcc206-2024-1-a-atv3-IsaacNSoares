@@ -5,7 +5,7 @@ const END_POINT = `https://pokeapi.co/api/v2/pokemon-form/${Math.floor(Math.rand
 async function buscaPokemons(){
   const data = await fetch(END_POINT)
   const valor = await data.json()
-  console.log(valor)
+  return valor;
 }
 
 buscaPokemons()
